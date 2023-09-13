@@ -21,7 +21,7 @@ if (both < 18.5) {
 } else {
     console.log('Patient is obese');
 }
-
+console.log(bmiTotal)
 
 
 
