@@ -7,21 +7,21 @@
 //&& code runs if all the conditions are true
 // II  code runs if one of the conditions is true
 
-function bmiTotal(weight, height) {
-    let both = weight / (height * height)
-    return both;
-}
-console.log(`BMI result: ${bmiTotal(64, 1.6)}`);
-if (both < 18.5) {
-    console.log('Patient is underweight');
-} else if (both >= 18.5 && both < 25) {
-    console.log('Patient is normal');
-} else if (both >= 25 && both <= 29.9) {
-    console.log('Patient is overweight');
-} else {
-    console.log('Patient is obese');
-}
-console.log(bmiTotal)
+// function bmiTotal(weight, height) {
+//     let both = weight / (height * height)
+//     return both;
+// }
+// console.log(`BMI result: ${bmiTotal(64, 1.6)}`);
+// if (both < 18.5) {
+//     console.log('Patient is underweight');
+// } else if (both >= 18.5 && both < 25) {
+//     console.log('Patient is normal');
+// } else if (both >= 25 && both <= 29.9) {
+//     console.log('Patient is overweight');
+// } else {
+//     console.log('Patient is obese');
+// }
+// console.log(bmiTotal)
 
 
 
@@ -115,11 +115,107 @@ console.log(personWithMostSkills);
 // console.log(object);
 
 // function myFunction(arr, n) {
-//     return arr.indexOf(n)
+//     if (n > arr.length)
+//         return arr
+// }else {
+//     return arr.slice(0, n)
 // }
-// myFunction([1, 2, 3, 4, 5], 3)
 
+function myFunc(arr, n) {
+    if (n > arr.length) {
+        return arr
+    } else {
+        return arr.slice(0, n)
+    }
+}
+
+console.log(myFunc([1, 2, 3, 4, 5], 3))
+console.log(myFunc([1, 2, 3, 4, 5], 8))
+
+function myFunction(array, n) {
+    return [...new Set(array.concat(n))].sort();
+    return
+}
+console.log(myFunction([1, 2, 3, 4, 5], [1, 2, 3, 6, 9, 8]))
+console.log(myFunction([1, 2, 3, 4, 5], [1, 10, 3, 4, 5]))
 
 
 // function myFunction2(a, n)
+// Write a function that takes an array of numbers as argument. Return the number of negative values in the array.
+function myFunction2(a) {
+    let count = 0;
+    for (let index = 0; index < a.length; index++) {
+
+        if (count[index] <= 0) {
+            count++
+
+        }
+
+    }
+    return count
+}
+console.log(myFunction2([1, -2, 2, -4]))
+
+console.log(myFunction2([0, 9, 1]))
+
+console.log(myFunction2([4, -3, 2, 1, 0]))
+
+
+function myFunction3(b) {
+    let nel2 = b.filter((neg) => neg <= 0).length;
+
+    return nel2
+}
+
+console.log(myFunction3([1, -2, 2, -4]))
+
+console.log(myFunction3([0, 9, 1]))
+
+console.log(myFunction3([4, -3, 2, 1, 0]))
+
+
+// let nel = a.filter((neg) => neg <= 0);
+/*Write a function that takes an array of strings as argument.Sort the array elements alphabetically.Return the result.
+    function
+myFunction
+    (
+        arr
+    )
+{
+
+    return
+}
+Test Cases:
+myFunction(['b', 'c', 'd', 'a'])
+Expected
+['a', 'b', 'c', 'd']
+myFunction(['z', 'c', 'd', 'a', 'y', 'a', 'w'])
+Expected
+['a', 'a', 'c', 'd', 'w', 'y', 'z']
+
+Write a function that takes an array of numbers as argument.It should return the sum of the numbers.
+    function
+myFunction
+    (
+        a
+    )
+{
+    let sum = 0;
+    for (let i = 0; i < a.length; i++) {
+        sum += i
+        return sum
+    }
+Test Cases:
+    myFunction([10, 100, 40])
+    Expected
+    150
+    myFunction([10, 100, 1000, 1])
+    Expected
+    1111
+    myFunction([-50, 0, 50, 200])
+    Expected
+    200
+
+    sh
+
 
