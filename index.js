@@ -161,7 +161,7 @@ console.log(myFunction2([0, 9, 1]))
 console.log(myFunction2([4, -3, 2, 1, 0]))
 
 
-function myFunction3(b) {
+let myFunction3 = (b) => {
     let nel2 = b.filter((neg) => neg <= 0).length;
 
     return nel2
@@ -215,7 +215,4 @@ Test Cases:
     myFunction([-50, 0, 50, 200])
     Expected
     200
-
-    sh
-
-
+    */
